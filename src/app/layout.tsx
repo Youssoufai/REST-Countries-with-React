@@ -28,6 +28,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header
+          className="flex"
+        >
+          <div
+            className="font-bold text-2xl"
+          >
+            Where in the world?
+          </div>
+          <div className="text-xl">
+            Dark Mode
+          </div>
+        </header>
         {children}
       </body>
     </html>

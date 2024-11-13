@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light mode variables */
+  --color-elements: hsl(0, 0%, 100%);
+  --color-background: hsl(0, 0%, 98%);
+  --color-text: hsl(200, 15%, 8%);
+  --color-input: hsl(0, 0%, 52%);
 }
 
+/* Dark mode variables */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-elements: hsl(209, 23%, 22%);
+    --color-background: hsl(207, 26%, 17%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-input: hsl(0, 0%, 100%);
   }
 }
 
